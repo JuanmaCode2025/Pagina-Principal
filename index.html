@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="cuador">
+      <section class="photo">
+        <img  id="ll"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPelFKYRdTr3l3iSb9nLq1GtAV4Nk7vPpGNAF2h3COWaCHA8xQTUr52rT9Ao31m-_wi0&usqp=CAU" alt="">
+        <p>Juan Manuel Mejia Duarte</p>
+      </section>
+    </div>
+    <div class="demas">
+      <div class="header">Trabajos de HTML y CSS</div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">My Diary</p>
+            <img class="img_proyect" src="img_proyecto1.png" alt="">
+            <p class="text-body">Un Diario Web</p>
+          </div>
+          <button class="card-button" onclick="redirigir('https://juanmacode2025.github.io/My_Diario/')">Ver
+            Trabajo</button>
+        </div>
+
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Github</p>
+            <img class="img_proyect" src="https://cdn.pixabay.com/photo/2020/11/01/03/08/youtube-5702765_1280.jpg"
+              alt="">
+            <p class="text-body">Video Explicación De Github</p>
+          </div>
+          <button class="card-button" onclick="redirigir('https://www.youtube.com/watch?v=QwNNidGyHqg')">Ver
+            Trabajo</button>
+        </div>
+
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">My Viaje</p>
+            <img class="img_proyect" src="img_proyecto3.png" alt="">
+            <p class="text-body">Pagina Web De Viajes</p>
+          </div>
+          <button class="card-button" onclick="redirigir('https://juanmacode2025.github.io/My-viaje/')">Ver
+            Trabajo</button>
+        </div>
+
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Rock</p>
+            <img class="img_proyect" src="Rock.png" alt="">
+            <p class="text-body">Pagina De Conciertos</p>
+          </div>
+          <button class="card-button" onclick="redirigir('https://juanmacode2025.github.io/Rock/')">Ver
+            Trabajo</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<style>
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+</style>
+<script>
+  function redirigir(url) {
+    window.location.href = url;
+  }
+</script>
+
+</html>
